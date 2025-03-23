@@ -13,13 +13,6 @@ body {
     background-size: cover;
 }
 
-/* Move elements to the center */
-.center {
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #header {
     height: 144px;
     background-color: #000232;
@@ -44,23 +37,30 @@ body {
     margin-left: 0;
 }
 
+/* Move elements to the center */
+.center {
+    width: 46.875%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Creates a row of elements in the element with this class */
-.container {
+.container:not(.center) {
     display: flex;
     flex-direction: row;
     gap: 15px;
 }
 
 /* Helps the container class to look nicer */
-.container > div {
+.container:not(.center) > div {
     width: 46.875%;
 }
 
-.container > div:first-child {
+.container:not(.center) > div:first-child {
     margin-right: auto;
 }
 
-.container > div:last-child {
+.container:not(.center) > div:last-child {
     margin-top: 100px;
 }
 
