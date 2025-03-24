@@ -56,6 +56,11 @@ body.background {
     margin: auto;
     margin-left: 0;
 }
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
 /* --------------------------------------------------------------------------- CSS for id: header, end --------------------------------------------------------------------------- */
 
 
@@ -163,7 +168,6 @@ body.background {
 .container1:not(.center-container1) {
     display: flex;
     flex-direction: row;
-    gap: 15px;
 }
 
 /* Helps the container class to look nicer */
@@ -172,6 +176,7 @@ body.background {
 }
 
 .container1:not(.center-container1) > div {
+    margin-left: 0;
     margin-right: auto;
 }
 
