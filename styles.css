@@ -140,38 +140,38 @@ body {
 }
 
 /* Move elements to the center */
-.center {
+.center-container1 {
     width: 46.875%;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* Creates a row of elements in the element with this class */
-.container:not(.center) {
+.container1:not(.center-container1) {
     display: flex;
     flex-direction: row;
     gap: 15px;
 }
 
 /* Helps the container class to look nicer */
-.container:not(.center) > div {
+.container1:not(.center-container1) > div {
     width: 46.875%;
 }
 
-.container:not(.center) > div {
+.container1:not(.center-container1) > div {
     margin-right: auto;
 }
 
-.container:not(.center) > div:last-child {
+.container1:not(.center-container1) > div:last-child {
     margin-right: 0;
     margin-top: 100px;
 }
 
-.container .container > div:last-child {
+.container1 .container1 > div:last-child {
     margin-top: 0;
 }
 
-.container > div > div:not(.container) {
+.container1 > div > div:not(.container1) {
     background-color: #1B263B;
     color: #ffffff;
     margin-bottom: 30px;
@@ -179,19 +179,19 @@ body {
     opacity: 95%;
 }
 
-.container > div > div > div {
+.container1 > div > div > div {
     width: 83.3333%;
     margin-left: auto;
     margin-right: auto;
     padding: 1px;
 }
 
-.container > div > div > div > h2 {
+.container1 > div > div > div > h2 {
     font-size: 32px;
     font-weight: 900;
 }
 
-.container > div > div > div > p {
+.container1 > div > div > div > p {
     font-size: 24px;
     opacity: 80%;
 }
