@@ -2,15 +2,18 @@
 body {
     font-family: 'Poppins';
     margin: 0;
-    /* background-color: rgb(65, 90, 119, 0.5); */
+    padding: 0;
+    height: 100vh;
 }
 
-.background {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+body.background-image {
     background: url('images/Background-Image-OLAC.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body.background {
+    background-color: rgb(65,90,119,0.5);
 }
 
 /* center text */
@@ -196,16 +199,80 @@ body {
     padding: 1px;
 }
 
-.container1 > div > div > div > h2 {
+.container1 h2 {
     font-size: 32px;
     font-weight: 900;
 }
 
-.container1 > div > div > div > p {
+.container1 p {
     font-size: 24px;
     opacity: 80%;
 }
 /* --------------------------------------------------------------------------- CSS for class: container1, end --------------------------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------------------------------- CSS for class: container2, start --------------------------------------------------------------------------- */
+.container2 {
+    width: 93.75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: relative;
+    height: 1600px;
+}
+
+.container2 > div {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.container2 > div:first-child {
+    background-color: #778DA9;
+    border-radius: 50px;
+    opacity: 50%;
+    
+}
+
+.container2 > div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.container2 > div:last-child > div {
+    background-color: #1B263B;
+    width: 91.7%;
+    opacity: 95%;
+    color: white;
+    border-radius: 60px;
+    margin: auto;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.container2 > div:last-child > div:first-child {
+    margin-top: auto;
+}
+
+.container2 > div:last-child > div > div {
+    margin: auto;
+}
+
+.container2 > div:last-child > div > div:first-child {
+    width: 80.8%;
+}
+
+.container2 h2 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.container2 p {
+    font-size: 24px;
+    opacity: 80%;
+}
+/* --------------------------------------------------------------------------- CSS for class: container2, end --------------------------------------------------------------------------- */
 
 
 /* This style is a modyfied version of the one from this site: 
