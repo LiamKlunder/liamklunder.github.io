@@ -9,7 +9,7 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url('Background-Image-OLAC.jpg');
+    background: url('images/Background-Image-OLAC.jpg');
     background-size: cover;
 }
 
@@ -24,6 +24,17 @@ body {
     font-weight: 400;
 }
 
+#header > div:first-child {
+    width: 165.71px;
+    height: 116px;
+    margin: 14px;
+}
+
+#header > div:first-child img {
+    width: 165.71px;
+    height: 116px;
+}
+
 #header > div:last-child {
     width: 60%;
     display: flex;
@@ -35,6 +46,97 @@ body {
 #header > div:last-child > div {
     margin: auto;
     margin-left: 0;
+}
+
+#search-bar {
+    width: 97.65625%;
+    height: 100px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: relative;
+}
+
+#search-bar > div {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+#search-bar > div:first-child {
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    opacity: 50%;
+}
+
+#search-bar > div:last-child {
+    display: flex;
+    flex-direction: row;
+}
+
+#search-bar > div:last-child > div {
+    height: 78%;
+    border-radius: 39px;
+    margin: auto;
+}
+
+#search-bar > div:last-child > div:first-child {
+    margin-left: 11px;
+    margin-right: 0;
+}
+
+#search-bar > div:last-child > div:last-child {
+    margin-right: 11px;
+}
+
+#search-bar > div:last-child > div {
+    display: flex;
+}
+
+#search-bar > div:last-child > div:first-child {
+    width: 77.8%;
+    background-color: #778DA9;
+    opacity: 50%;
+    box-sizing: border-box;
+    border: 5px groove #1b263b88;
+}
+
+#search-bar > div:last-child > div:nth-child(2) {
+    width: 7.2%;
+    background-color: #1B263B;
+    opacity: 95%;
+}
+
+#search-bar > div:last-child > div:nth-child(3) {
+    width: 12.6%;
+    background-color: #1B263B;
+    opacity: 95%;
+    flex-direction: row;
+}
+
+#search-bar > div:last-child > div > div {
+    width: fit-content;
+    margin: auto;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#search-bar > div:last-child > div:first-child > div {
+    margin-left: 30px;
+}
+
+#search-bar > div:last-child > div:nth-child(3) > div:first-child {
+    margin-right: 0;
+}
+
+#search-bar > div:last-child > div:nth-child(3) > div:last-child {
+    margin-left: 0;
+    font-size: 96px;
+    margin-top: -32px;
+}
+
+.center-text {
+    text-align: center;
 }
 
 /* Move elements to the center */
@@ -56,11 +158,12 @@ body {
     width: 46.875%;
 }
 
-.container:not(.center) > div:first-child {
+.container:not(.center) > div {
     margin-right: auto;
 }
 
 .container:not(.center) > div:last-child {
+    margin-right: 0;
     margin-top: 100px;
 }
 
@@ -106,9 +209,10 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top */
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: black;
+    background-color: #1B263B;
     color: white;
     cursor: pointer;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 200px;
+    opacity: 95%;
 }
