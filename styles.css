@@ -93,6 +93,41 @@ body {
     opacity: 80%;
 }
 
+.container:not(.center) div.advanced_search {
+    background-color: #D9D9D9;
+    border-radius: 30px;
+    opacity: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 80%;
+    padding: 10px 20px;
+}
+
+.blue_bg {
+    background-color: #a9b4c2;
+}
+
+.search_tag {
+    background-color: #778DA9;
+    width: 15%;
+    border-radius: 5px;
+    padding: 6px;
+    color: #FFFFFF;
+}
+
+.advanced_search table {
+    width: 100%;
+    margin: auto;
+    border-spacing: 20px;
+}
+
+.search_input {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    padding: 6px;
+    color:rgba(0, 0, 0, 0.5);
+}
 
 
 /* This style is a modyfied version of the one from this site: 
