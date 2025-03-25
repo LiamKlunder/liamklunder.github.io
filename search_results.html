@@ -1,65 +1,118 @@
 <!DOCTYPE html>
+
 <html>
-	<head>
-		<title>OLAC/Search Results</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    </head>
 
-	<body>
-		<!-- Header for all webpages -->
-		<nav>
-			<a href="index.html"><img src="images/olac100.gif" alt="olac logo" /></a>
-			<ul>
-				<li><a href="index.html"><b>Home</b></a></li>
-				<li><a href="about.html"><b>About</b></a></li>
-				<li><a href="advanced_search_results.html">Advanced Search</a></li>
-			</ul>
-		</nav>
+    <body class="blue_bg">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script src="myscripts.js"></script> 
 
-		<!-- Start of content in webpage -->
-		<div id = content>
-			<p>
-				Not finding what you need? Try using our advanced search to search by ISO 639-3, Family, Macroarea, Country, Genus or WALS code <br />
-				<button><a href="advanced_search.html">Advanced Search ></a></button>
-			</p>
-			<table>
-				<tr>
-					<th>Language</th>
-					<th>ISO 639-3</th>
-					<th>Family</th>
-					<th>Macroarea</th>
-					<th>Country</th>
-					<th>Genus</th>
-					<th>WALS code</th>
-				</tr>
-				<tr>
-					<td>Gujarati</td>
-					<td>GUJ</td>
-					<td>Indo-Europian</td>
-					<td>Eurasia</td>
-					<td>India</td>
-					<td>Indic</td>
-					<td>GUJ</td>
-				</tr>
-				<tr>
-					<td>Gureng Gureng</td>
-					<td>GNR</td>
-					<td>Pama-Nyungan</td>
-					<td>Australia</td>
-					<td>Australia</td>
-					<td>Southeastern Pama-Nyungan</td>
-					<td>GGU</td>
-				</tr>
-				<tr>
-					<td>Gujarati</td>
-					<td>GUJ</td>
-					<td>Indo-Europian</td>
-					<td>Eurasia</td>
-					<td>India</td>
-					<td>Indic</td>
-					<td>GUJ</td>
-				</tr>
-			</table>
-		</div>
-	</body>
+        <div id="header"> 
+            <div>
+                <div>
+                    <img src="images/olac100.gif">
+                </div>
+            </div>
+            <div>
+                <div>
+                    Homepage
+                </div>
+                <div>
+                    Trending
+                </div>
+                <div>
+                    Language archive
+                </div>
+                <div>
+                    About us
+                </div>
+            </div>
+        </div>
+
+        <div id="search-bar"> 
+            <div></div>
+            <div>
+                <div>
+                    <div>
+                        Find a language: ‘Magi’
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Search
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Advanced Search
+                    </div>
+                    <div>
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="advanced_search">
+                <p>Not finding what you need? Try using our <a href="advanced_search_results.html">Advanced search</a> to search by ISO 639-3, Family, Macroarea, Country, Genus or WALS code</p>
+            </div>
+
+            <div class="advanced_search">
+                <table class="advanced_search_results">
+                    <tr>
+                        <th>Language</th>
+                        <th>ISO 639-3</th>
+                        <th>Family</th>
+                        <th>Macroarea</th>
+                        <th>Country</th>
+                        <th>Genus</th>
+                        <th>Wals code</th>
+                    </tr>
+                    <tr>
+                        <table class="advanced_search_results_body">
+                            <tr>
+                                <td class="language_tag">Gujarati</td>
+                                <td>GUJ</td>
+                                <td>Indo-Europian</td>
+                                <td>Eurasia</td>
+                                <td>India</td>
+                                <td>Indic</td>
+                                <td>GUJ</td>
+                            </tr>
+                        </table>
+                    </tr>
+                    <tr>
+                        <table class="advanced_search_results_body">
+                            <tr>
+                                <td class="language_tag">Gureng Gureng</td>
+                                <td>GNR</td>
+                                <td>Pama-Nyungan</td>
+                                <td>Australia</td>
+                                <td>Australia</td>
+                                <td>Southeastern Pama-Nyungan</td>
+                                <td>GGU</td>
+                            </tr>
+                        </table>
+                    </tr>
+                    <tr>
+                        <table class="advanced_search_results_body">
+                            <tr>
+                                <td class="language_tag">Gurma</td>
+                                <td>GUX</td>
+                                <td>Niger-Congo</td>
+                                <td>Africa</td>
+                                <td>Burkina Faso</td>
+                                <td>Oti-Volta</td>
+                                <td>GRM</td>
+                            </tr>
+                        </table>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
 </html>

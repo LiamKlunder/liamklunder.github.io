@@ -9,10 +9,16 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url('Background-Image-OLAC.jpg');
+    background: url('images/Background-Image-OLAC.jpg');
     background-size: cover;
 }
 
+/* center text */
+.center-text {
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------------- CSS for id: header, start --------------------------------------------------------------------------- */
 #header {
     height: 144px;
     background-color: #000232;
@@ -22,6 +28,17 @@ body {
     color: #ffffff;
     font-size: 24px;
     font-weight: 400;
+}
+
+#header > div:first-child {
+    width: 165.71px;
+    height: 116px;
+    margin: 14px;
+}
+
+#header > div:first-child img {
+    width: 165.71px;
+    height: 116px;
 }
 
 #header > div:last-child {
@@ -36,39 +53,135 @@ body {
     margin: auto;
     margin-left: 0;
 }
+/* --------------------------------------------------------------------------- CSS for id: header, end --------------------------------------------------------------------------- */
 
+
+
+/* --------------------------------------------------------------------------- CSS for id: search-bar, start --------------------------------------------------------------------------- */
+#search-bar {
+    width: 97.65625%;
+    height: 100px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: relative;
+}
+
+#search-bar > div {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+#search-bar > div:first-child {
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    opacity: 50%;
+}
+
+#search-bar > div:last-child {
+    display: flex;
+    flex-direction: row;
+}
+
+#search-bar > div:last-child > div {
+    height: 78%;
+    border-radius: 39px;
+    margin: auto;
+}
+
+#search-bar > div:last-child > div:first-child {
+    margin-left: 11px;
+    margin-right: 0;
+}
+
+#search-bar > div:last-child > div:last-child {
+    margin-right: 11px;
+}
+
+#search-bar > div:last-child > div {
+    display: flex;
+}
+
+#search-bar > div:last-child > div:first-child {
+    width: 77.8%;
+    background-color: #778DA9;
+    opacity: 50%;
+    box-sizing: border-box;
+    border: 5px groove #1b263b88;
+}
+
+#search-bar > div:last-child > div:nth-child(2) {
+    width: 7.2%;
+    background-color: #1B263B;
+    opacity: 95%;
+}
+
+#search-bar > div:last-child > div:nth-child(3) {
+    width: 12.6%;
+    background-color: #1B263B;
+    opacity: 95%;
+    flex-direction: row;
+}
+
+#search-bar > div:last-child > div > div {
+    width: fit-content;
+    margin: auto;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#search-bar > div:last-child > div:first-child > div {
+    margin-left: 30px;
+}
+
+#search-bar > div:last-child > div:nth-child(3) > div:first-child {
+    margin-right: 0;
+}
+
+#search-bar > div:last-child > div:nth-child(3) > div:last-child {
+    margin-left: 0;
+    font-size: 96px;
+    margin-top: -32px;
+}
+/* --------------------------------------------------------------------------- CSS for id: search-bar, end --------------------------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------------------------------- CSS for class: container1, start --------------------------------------------------------------------------- */
 /* Move elements to the center */
-.center {
+.center-container1 {
     width: 46.875%;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* Creates a row of elements in the element with this class */
-.container:not(.center) {
+.container1:not(.center-container1) {
     display: flex;
     flex-direction: row;
     gap: 15px;
 }
 
 /* Helps the container class to look nicer */
-.container:not(.center) > div {
+.container1:not(.center-container1) > div {
     width: 46.875%;
 }
 
-.container:not(.center) > div:first-child {
+.container1:not(.center-container1) > div {
     margin-right: auto;
 }
 
-.container:not(.center) > div:last-child {
+.container1:not(.center-container1) > div:last-child {
+    margin-right: 0;
     margin-top: 100px;
 }
 
-.container .container > div:last-child {
+.container1 .container1 > div:last-child {
     margin-top: 0;
 }
 
-.container > div > div:not(.container) {
+.container1 > div > div:not(.container1) {
     background-color: #1B263B;
     color: #ffffff;
     margin-bottom: 30px;
@@ -76,22 +189,25 @@ body {
     opacity: 95%;
 }
 
-.container > div > div > div {
+.container1 > div > div > div {
     width: 83.3333%;
     margin-left: auto;
     margin-right: auto;
     padding: 1px;
 }
 
-.container > div > div > div > h2 {
+.container1 > div > div > div > h2 {
     font-size: 32px;
     font-weight: 900;
 }
 
-.container > div > div > div > p {
+.container1 > div > div > div > p {
     font-size: 24px;
     opacity: 80%;
 }
+
+/* --------------------------------------------------------------------------- CSS for search results, start --------------------------------------------------------------------------- */
+
 
 .container:not(.center) div.advanced_search {
     background-color: #D9D9D9;
@@ -99,7 +215,7 @@ body {
     opacity: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 40px;
     width: 80%;
     padding: 10px 20px;
 }
@@ -116,7 +232,7 @@ body {
     color: #FFFFFF;
 }
 
-.advanced_search table {
+.advanced_search .search_table {
     width: 100%;
     margin: auto;
     border-spacing: 20px;
@@ -128,6 +244,57 @@ body {
     padding: 6px;
     color:rgba(0, 0, 0, 0.5);
 }
+
+.advanced_search_results {
+    background-color: #1B263B;
+    color: #FFFFFF;
+    border-radius: 20px;
+    /* margin: auto; */
+    width: 100%;
+}
+
+.advanced_search_results > tbody > tr > th {
+    width: 14%;
+}
+
+.advanced_search_results_body {
+    background-color: #a9b4c2;
+    width: 100%;
+    border-radius: 20px;
+    border-spacing: 20px;
+    margin-top: 20px;
+}
+
+.advanced_search_results_body td{
+    background-color: #a9b4c2;
+    border-radius: 20px;
+    /* border-spacing: 20px; */
+    width: 14%;
+    text-align: center;
+}
+
+.advanced_search_results_body .language_tag {
+    background-color: #1B263B;
+    color: #FFFFFF;
+}
+
+.advanced_search p {
+    font-weight: bold;
+}
+
+.advanced_search a {
+    padding: 6px;
+    border-radius: 10px;
+    background-color: #1B263B;
+    color: #FFFFFF;
+}
+
+a:visited {
+    color: #95d4ff;
+}
+
+
+/* --------------------------------------------------------------------------- CSS for search results, end --------------------------------------------------------------------------- */
 
 
 /* This style is a modyfied version of the one from this site: 
@@ -141,9 +308,10 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top */
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: black;
+    background-color: #1B263B;
     color: white;
     cursor: pointer;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 200px;
+    opacity: 95%;
 }
