@@ -457,7 +457,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     display: relative;
-    height: 1600px;
+    height: 1400px;
 }
 
 .container4 > div {
@@ -468,8 +468,7 @@ a {
 
 .container4 > div:first-child {
     background-color: #D9D9D9;
-    border-radius: 50px;
-    opacity: 50%;
+    border-radius: 10px;
     
 }
 
@@ -478,12 +477,23 @@ a {
     flex-direction: column;
 }
 
+.container4 > div:last-child > div:first-child {
+    background-color: #415A77;
+    position: absolute;
+    left: 5%;
+    top: 2%;
+    border-radius: 10px;
+    width: 11%;
+    padding: 10px;
+    font-weight: bold;
+}
+
 .container4 > div:last-child > div {
     background-color: #1B263B;
     width: 91.7%;
     opacity: 95%;
     color: white;
-    border-radius: 60px;
+    border-radius: 10px;
     margin: auto;
     margin-bottom: 0;
     display: flex;
