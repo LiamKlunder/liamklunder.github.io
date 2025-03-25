@@ -2,15 +2,18 @@
 body {
     font-family: 'Poppins';
     margin: 0;
-    /* background-color: rgb(65, 90, 119, 0.5); */
+    padding: 0;
+    height: 100vh;
 }
 
-.background {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+body.background-image {
     background: url('images/Background-Image-OLAC.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body.background {
+    background-color: rgb(65,90,119,0.5);
 }
 
 /* center text */
@@ -31,14 +34,14 @@ body {
 }
 
 #header > div:first-child {
-    width: 165.71px;
-    height: 116px;
-    margin: 14px;
+    width: 144px;
+    height: 100.8px;
+    margin: 21.6px;
 }
 
 #header > div:first-child img {
-    width: 165.71px;
-    height: 116px;
+    width: 100%;
+    height: 100%;
 }
 
 #header > div:last-child {
@@ -52,6 +55,11 @@ body {
 #header > div:last-child > div {
     margin: auto;
     margin-left: 0;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
 }
 /* --------------------------------------------------------------------------- CSS for id: header, end --------------------------------------------------------------------------- */
 
@@ -122,6 +130,7 @@ body {
     background-color: #1B263B;
     opacity: 95%;
     flex-direction: row;
+    text-align: right;
 }
 
 #search-bar > div:last-child > div > div {
@@ -148,6 +157,77 @@ body {
 
 
 
+/* --------------------------------------------------------------------------- CSS for id: email-bar, start --------------------------------------------------------------------------- */
+#email-bar {
+    width: 25%;
+    height: 70px;
+    display: relative;
+}
+
+#email-bar > div {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+#email-bar > div:first-child {
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    opacity: 50%;
+}
+
+#email-bar > div:last-child {
+    display: flex;
+    flex-direction: row;
+}
+
+#email-bar > div:last-child > div {
+    height: 78%;
+    border-radius: 39px;
+    margin: auto;
+}
+
+#email-bar > div:last-child > div:first-child {
+    margin-left: 11px;
+    margin-right: 0;
+}
+
+#email-bar > div:last-child > div:last-child {
+    margin-right: 11px;
+}
+
+#email-bar > div:last-child > div {
+    display: flex;
+}
+
+#email-bar > div:last-child > div:first-child {
+    width: 77%;
+    background-color: #778DA9;
+    opacity: 50%;
+    box-sizing: border-box;
+    border: 5px groove #1b263b88;
+}
+
+#email-bar > div:last-child > div:nth-child(2) {
+    width: 19%;
+    background-color: #1B263B;
+    opacity: 95%;
+}
+
+#email-bar > div:last-child > div > div {
+    width: fit-content;
+    margin: auto;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#email-bar > div:last-child > div:first-child > div {
+    margin-left: 30px;
+}
+/* --------------------------------------------------------------------------- CSS for id: email-bar, end --------------------------------------------------------------------------- */
+
+
+
 /* --------------------------------------------------------------------------- CSS for class: container1, start --------------------------------------------------------------------------- */
 /* Move elements to the center */
 .center-container1 {
@@ -160,7 +240,6 @@ body {
 .container1:not(.center-container1) {
     display: flex;
     flex-direction: row;
-    gap: 15px;
 }
 
 /* Helps the container class to look nicer */
@@ -169,6 +248,7 @@ body {
 }
 
 .container1:not(.center-container1) > div {
+    margin-left: 0;
     margin-right: auto;
 }
 
@@ -196,12 +276,12 @@ body {
     padding: 1px;
 }
 
-.container1 > div > div > div > h2 {
+.container1 h2 {
     font-size: 32px;
     font-weight: 900;
 }
 
-.container1 > div > div > div > p {
+.container1 p {
     font-size: 24px;
     opacity: 80%;
 }
@@ -295,6 +375,246 @@ a:visited {
 
 
 /* --------------------------------------------------------------------------- CSS for search results, end --------------------------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------------------------------- CSS for class: container2, start --------------------------------------------------------------------------- */
+.container2 {
+    width: 93.75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: relative;
+    height: 1600px;
+}
+
+.container2 > div {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.container2 > div:first-child {
+    background-color: #778DA9;
+    border-radius: 50px;
+    opacity: 50%;
+    
+}
+
+.container2 > div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.container2 > div:last-child > div {
+    background-color: #1B263B;
+    width: 91.7%;
+    opacity: 95%;
+    color: white;
+    border-radius: 60px;
+    margin: auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.container2 > div:last-child > div:first-child {
+    margin: auto;
+}
+
+.container2 > div:last-child > div:last-child {
+    margin: auto;
+}
+
+.container2 > div:last-child > div > div {
+    margin: auto;
+}
+
+.container2 > div:last-child > div > div:first-child {
+    width: 80.8%;
+}
+
+.container2 h2 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.container2 p {
+    font-size: 24px;
+    opacity: 80%;
+}
+/* --------------------------------------------------------------------------- CSS for class: container2, end --------------------------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------------------------------- CSS for class: container3, start --------------------------------------------------------------------------- */
+.container3 {
+    width: 93.75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    height: 302px;
+    margin-bottom: 60px;
+}
+
+.container3 > div:first-child {
+    height: 60px;
+    width: 100%;
+    background-color: #1B263B;
+    margin-bottom: auto;
+    border-radius: 30px;
+    opacity: 95%;
+    display: flex;
+}
+
+.container3 > div:last-child {
+    height: 218px;
+    width: inherit;
+    display: relative;
+}
+
+.container3 > div:last-child > div {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+}
+
+.container3 > div:last-child > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.container3 > div:last-child > div:first-child > div {
+    background-color: #778DA9;
+    border-radius: 30px;
+    opacity: 50%;
+}
+
+.container3 > div:last-child > div > div {
+    width: 8.875%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container3 > div:last-child > div > div:last-child {
+    margin-right: 0;
+}
+
+.container3 > div:last-child > div:first-child > div > div {
+    background-color: #1B263B;
+    border-radius: 30px;
+    margin-top: auto;
+}
+
+.container3 > div:last-child > div > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.container3 > div:last-child > div > div > div:first-child {
+    height: 72.37706422%;
+}
+
+.container3 > div:last-child > div > div > div:last-child {
+    height: 27.52293578%;
+}
+.container3 p {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+.container3 p:last-child {
+    margin: auto;
+}
+
+.container3 > div:first-child p {
+    font-size: 32px;
+    margin-left: 2.2375%;
+}
+/* --------------------------------------------------------------------------- CSS for class: container3, end --------------------------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------------------------------- CSS for class: container4, start --------------------------------------------------------------------------- */
+.container4 {
+    width: 93.75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: relative;
+    height: 1400px;
+}
+
+.container4 > div {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.container4 > div:first-child {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    
+}
+
+.container4 > div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.container4 > div:last-child > div:first-child {
+    background-color: #415A77;
+    position: absolute;
+    left: 5%;
+    top: 2%;
+    border-radius: 10px;
+    width: 11%;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.container4 > div:last-child > div {
+    background-color: #1B263B;
+    width: 91.7%;
+    opacity: 95%;
+    color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.container4 > div:last-child > div:first-child {
+    margin: auto;
+}
+
+.container4 > div:last-child > div:last-child {
+    margin: auto;
+}
+
+.container4 > div:last-child > div > div {
+    margin: auto;
+}
+
+.container4 > div:last-child > div > div:first-child {
+    width: 80.8%;
+}
+
+.container4 h2 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.container4 p {
+    font-size: 24px;
+    opacity: 80%;
+}
+/* --------------------------------------------------------------------------- CSS for class: container4, end --------------------------------------------------------------------------- */
 
 
 /* This style is a modyfied version of the one from this site: 
