@@ -157,6 +157,77 @@ a {
 
 
 
+/* --------------------------------------------------------------------------- CSS for id: email-bar, start --------------------------------------------------------------------------- */
+#email-bar {
+    width: 25%;
+    height: 70px;
+    display: relative;
+}
+
+#email-bar > div {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+#email-bar > div:first-child {
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    opacity: 50%;
+}
+
+#email-bar > div:last-child {
+    display: flex;
+    flex-direction: row;
+}
+
+#email-bar > div:last-child > div {
+    height: 78%;
+    border-radius: 39px;
+    margin: auto;
+}
+
+#email-bar > div:last-child > div:first-child {
+    margin-left: 11px;
+    margin-right: 0;
+}
+
+#email-bar > div:last-child > div:last-child {
+    margin-right: 11px;
+}
+
+#email-bar > div:last-child > div {
+    display: flex;
+}
+
+#email-bar > div:last-child > div:first-child {
+    width: 77%;
+    background-color: #778DA9;
+    opacity: 50%;
+    box-sizing: border-box;
+    border: 5px groove #1b263b88;
+}
+
+#email-bar > div:last-child > div:nth-child(2) {
+    width: 19%;
+    background-color: #1B263B;
+    opacity: 95%;
+}
+
+#email-bar > div:last-child > div > div {
+    width: fit-content;
+    margin: auto;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#email-bar > div:last-child > div:first-child > div {
+    margin-left: 30px;
+}
+/* --------------------------------------------------------------------------- CSS for id: email-bar, end --------------------------------------------------------------------------- */
+
+
+
 /* --------------------------------------------------------------------------- CSS for class: container1, start --------------------------------------------------------------------------- */
 /* Move elements to the center */
 .center-container1 {
