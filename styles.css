@@ -251,13 +251,17 @@ a {
     color: white;
     border-radius: 60px;
     margin: auto;
-    margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     flex-direction: row;
 }
 
 .container2 > div:last-child > div:first-child {
-    margin-top: auto;
+    margin: auto;
+}
+
+.container2 > div:last-child > div:last-child {
+    margin: auto;
 }
 
 .container2 > div:last-child > div > div {
@@ -276,6 +280,100 @@ a {
 .container2 p {
     font-size: 24px;
     opacity: 80%;
+}
+/* --------------------------------------------------------------------------- CSS for class: container2, end --------------------------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------------------------------- CSS for class: container2, start --------------------------------------------------------------------------- */
+.container3 {
+    width: 93.75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    height: 302px;
+    margin-bottom: 60px;
+}
+
+.container3 > div:first-child {
+    height: 60px;
+    width: 100%;
+    background-color: #1B263B;
+    margin-bottom: auto;
+    border-radius: 30px;
+    opacity: 95%;
+    display: flex;
+}
+
+.container3 > div:last-child {
+    height: 218px;
+    width: inherit;
+    display: relative;
+}
+
+.container3 > div:last-child > div {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+}
+
+.container3 > div:last-child > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.container3 > div:last-child > div:first-child > div {
+    background-color: #778DA9;
+    border-radius: 30px;
+    opacity: 50%;
+}
+
+.container3 > div:last-child > div > div {
+    width: 8.875%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container3 > div:last-child > div > div:last-child {
+    margin-right: 0;
+}
+
+.container3 > div:last-child > div:first-child > div > div {
+    background-color: #1B263B;
+    border-radius: 30px;
+    margin-top: auto;
+}
+
+.container3 > div:last-child > div > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.container3 > div:last-child > div > div > div:first-child {
+    height: 72.37706422%;
+}
+
+.container3 > div:last-child > div > div > div:last-child {
+    height: 27.52293578%;
+}
+.container3 p {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+.container3 p:last-child {
+    margin: auto;
+}
+
+.container3 > div:first-child p {
+    font-size: 32px;
+    margin-left: 2.2375%;
 }
 /* --------------------------------------------------------------------------- CSS for class: container2, end --------------------------------------------------------------------------- */
 
