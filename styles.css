@@ -577,6 +577,7 @@ a:visited {
     color: white;
     border-radius: 10px;
     display: flex;
+    padding: 10px;
 }
 /* --------------------------------------------------------------------------- CSS for class: container4, end --------------------------------------------------------------------------- */
 
@@ -593,7 +594,18 @@ a:visited {
     background-color: #415A77;
     color: white;
     border-radius: 10px;
-    display: inherit;
+    text-align: center;
+    font-weight: bold;
+}
+
+#back {
+    width: 15%;
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color: #1B263B;
+    border-radius: 20px;
     text-align: center;
     font-weight: bold;
 }
