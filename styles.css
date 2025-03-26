@@ -586,12 +586,14 @@ a:visited {
 /* Used in combination with container4 as a title above the container */
 .title {
     width: 15%;
+    height: 50px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
     background-color: #415A77;
     color: white;
     border-radius: 10px;
+    display: inherit;
     text-align: center;
     font-weight: bold;
 }
