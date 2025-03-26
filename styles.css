@@ -288,7 +288,7 @@ a {
 
 /* --------------------------------------------------------------------------- CSS for search results, start --------------------------------------------------------------------------- */
 
-
+/* Container around the advanced search inputs and results */
 .container:not(.center) div.advanced_search {
     background-color: #D9D9D9;
     border-radius: 30px;
@@ -312,12 +312,14 @@ a {
     color: #FFFFFF;
 }
 
+/* Advanced search inputs table */
 .advanced_search .search_table {
     width: 100%;
     margin: auto;
     border-spacing: 20px;
 }
 
+/* 'Type here' inputs */
 .search_input {
     border-radius: 5px;
     background-color: #FFFFFF;
@@ -325,14 +327,15 @@ a {
     color:rgba(0, 0, 0, 0.5);
 }
 
+/* Results header */
 .advanced_search_results {
     background-color: #1B263B;
     color: #FFFFFF;
     border-radius: 20px;
-    /* margin: auto; */
     width: 100%;
 }
 
+/* Ensure items in the header are equally spaced */
 .advanced_search_results > tbody > tr > th {
     width: 14%;
 }
@@ -345,10 +348,9 @@ a {
     margin-top: 20px;
 }
 
-.advanced_search_results_body td{
+.advanced_search_results_body td {
     background-color: #a9b4c2;
     border-radius: 20px;
-    /* border-spacing: 20px; */
     width: 14%;
     text-align: center;
 }
@@ -356,6 +358,7 @@ a {
 .advanced_search_results_body .language_tag {
     background-color: #1B263B;
     color: #FFFFFF;
+    padding: 6px;
 }
 
 .advanced_search p {
@@ -368,10 +371,6 @@ a {
     background-color: #1B263B;
     color: #FFFFFF;
 }
-
-/* a:visited {
-    color: #95d4ff;
-} */
 
 
 /* --------------------------------------------------------------------------- CSS for search results, end --------------------------------------------------------------------------- */
