@@ -6,6 +6,7 @@ body {
     height: 100vh;
 }
 
+/* Background image for on the homepage */
 body.background-image {
     background: url('images/Background-Image-OLAC.jpg');
     background-size: cover;
@@ -21,6 +22,7 @@ body.background {
     text-align: center;
 }
 
+/* normal link behaviour, start */
 a {
     color: #ffffff;
 }
@@ -28,6 +30,8 @@ a {
 a:visited {
     color: #95d4ff;
 }
+/* normal link behaviour, end */
+
 /* --------------------------------------------------------------------------- CSS for id: header, start --------------------------------------------------------------------------- */
 #header {
     height: 144px;
@@ -46,11 +50,13 @@ a:visited {
     margin: 21.6px;
 }
 
+/* image settings */
 #header > div:first-child img {
     width: 100%;
     height: 100%;
 }
 
+/* header buttons */
 #header > div:last-child {
     width: 60%;
     display: flex;
@@ -121,6 +127,7 @@ a:visited {
     display: flex;
 }
 
+/* typing area */
 #search-bar > div:last-child > div:first-child {
     width: 77.8%;
     background-color: #778DA9;
@@ -129,12 +136,14 @@ a:visited {
     border: 5px groove #1b263b88;
 }
 
+/* search button */
 #search-bar > div:last-child > div:nth-child(2) {
     width: 7.2%;
     background-color: #1B263B;
     opacity: 95%;
 }
 
+/* advanced search button */
 #search-bar > div:last-child > div:nth-child(3) {
     width: 12.6%;
     background-color: #1B263B;
@@ -221,6 +230,7 @@ a:visited {
     display: flex;
 }
 
+/* typing area */
 #search-bar-min > div:last-child > div:first-child {
     width: 86.5%;
     background-color: #778DA9;
@@ -229,6 +239,7 @@ a:visited {
     border: 5px groove #1b263b88;
 }
 
+/* search button */
 #search-bar-min > div:last-child > div:nth-child(2) {
     width: 12%;
     background-color: #1B263B;
@@ -310,6 +321,7 @@ a:visited {
     display: flex;
 }
 
+/* typing area */
 #email-bar > div:last-child > div:first-child {
     width: 77%;
     background-color: #778DA9;
@@ -318,6 +330,7 @@ a:visited {
     border: 5px groove #1b263b88;
 }
 
+/* confirm button */
 #email-bar > div:last-child > div:nth-child(2) {
     width: 19%;
     background-color: #1B263B;
@@ -352,16 +365,13 @@ a:visited {
     flex-direction: row;
 }
 
-/* Helps the container class to look nicer */
 .container1:not(.center-container1) > div {
     width: 46.875%;
-}
-
-.container1:not(.center-container1) > div {
     margin-left: 0;
     margin-right: auto;
 }
 
+/* moves the right side to a lower position */
 .container1:not(.center-container1) > div:last-child {
     margin-right: 0;
     margin-top: 100px;
@@ -371,6 +381,7 @@ a:visited {
     margin-top: 0;
 }
 
+/* settings for the text boxes */
 .container1 > div > div:not(.container1) {
     background-color: #1B263B;
     color: #ffffff;
@@ -379,6 +390,7 @@ a:visited {
     opacity: 95%;
 }
 
+/* helps with a better layout for the text in the box */
 .container1 > div > div > div {
     width: 83.3333%;
     margin-left: auto;
@@ -493,6 +505,7 @@ a:visited {
     gap: 10px;
 }
 
+/* advanced search button on its own */
 #advanced_search_button {
     border-radius: 50px;
     height: 60px;
@@ -547,6 +560,7 @@ a:visited {
     height: inherit;
 }
 
+/* background */
 .container2 > div:first-child {
     background-color: #778DA9;
     border-radius: 50px;
@@ -559,6 +573,7 @@ a:visited {
     flex-direction: column;
 }
 
+/* basic settings for the layout */
 .container2 > div:last-child > div {
     background-color: #1B263B;
     width: 91.7%;
@@ -611,6 +626,7 @@ a:visited {
     margin-bottom: 60px;
 }
 
+/* trending headers */
 .container3 > div:first-child {
     height: 60px;
     width: 100%;
@@ -638,6 +654,7 @@ a:visited {
     flex-direction: row;
 }
 
+/* trending language boxes */
 .container3 > div:last-child > div:first-child > div {
     background-color: #778DA9;
     border-radius: 30px;
@@ -655,6 +672,7 @@ a:visited {
     margin-right: 0;
 }
 
+/* trending number boxes */
 .container3 > div:last-child > div:first-child > div > div {
     background-color: #1B263B;
     border-radius: 30px;
