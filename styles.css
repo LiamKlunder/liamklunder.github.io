@@ -585,7 +585,7 @@ a:visited {
 
 /* --------------------------------------------------------------------------- CSS for class: title, start --------------------------------------------------------------------------- */
 /* Used in combination with container4 as a title above the container */
-.title {
+#title {
     width: 15%;
     height: 50px;
     margin-left: auto;
@@ -601,13 +601,25 @@ a:visited {
 #back {
     width: 15%;
     padding: 4px;
-    margin-left: 10px;
+    margin-left: 50px;
     margin-right: auto;
     margin-bottom: 10px;
     background-color: #1B263B;
     border-radius: 20px;
     text-align: center;
     font-weight: bold;
+}
+
+#iso {
+    width: 15%;
+    padding: 4px;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    background-color: #415A77;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
 }
 /* --------------------------------------------------------------------------- CSS for class: title, end --------------------------------------------------------------------------- */
 
