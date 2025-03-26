@@ -21,6 +21,13 @@ body.background {
     text-align: center;
 }
 
+a {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #95d4ff;
+}
 /* --------------------------------------------------------------------------- CSS for id: header, start --------------------------------------------------------------------------- */
 #header {
     height: 144px;
@@ -57,9 +64,12 @@ body.background {
     margin-left: 0;
 }
 
-a {
-    color: #ffffff;
+#header a {
     text-decoration: none;
+}
+
+#header a:visited {
+    color: #ffffff;
 }
 /* --------------------------------------------------------------------------- CSS for id: header, end --------------------------------------------------------------------------- */
 
@@ -153,7 +163,107 @@ a {
     font-size: 96px;
     margin-top: -32px;
 }
+
+#search-bar a {
+    text-decoration: none;
+}
+
+#search-bar a:visited {
+    color: #ffffff;
+}
 /* --------------------------------------------------------------------------- CSS for id: search-bar, end --------------------------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------------------------------- CSS for id: search-bar-min, start --------------------------------------------------------------------------- */
+#search-bar-min {
+    width: 85.9375%;
+    height: 100px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: relative;
+}
+
+#search-bar-min > div {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+#search-bar-min > div:first-child {
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    opacity: 50%;
+}
+
+#search-bar-min > div:last-child {
+    display: flex;
+    flex-direction: row;
+}
+
+#search-bar-min > div:last-child > div {
+    height: 78%;
+    border-radius: 39px;
+    margin: auto;
+}
+
+#search-bar-min > div:last-child > div:first-child {
+    margin-left: 11px;
+    margin-right: 0;
+}
+
+#search-bar-min > div:last-child > div:last-child {
+    margin-right: 11px;
+}
+
+#search-bar-min > div:last-child > div {
+    display: flex;
+}
+
+#search-bar-min > div:last-child > div:first-child {
+    width: 86.5%;
+    background-color: #778DA9;
+    opacity: 50%;
+    box-sizing: border-box;
+    border: 5px groove #1b263b88;
+}
+
+#search-bar-min > div:last-child > div:nth-child(2) {
+    width: 12%;
+    background-color: #1B263B;
+    opacity: 95%;
+}
+
+#search-bar-min > div:last-child > div > div {
+    width: fit-content;
+    margin: auto;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#search-bar-min > div:last-child > div:first-child > div {
+    margin-left: 30px;
+}
+
+#search-bar-min > div:last-child > div:nth-child(3) > div:first-child {
+    margin-right: 0;
+}
+
+#search-bar-min > div:last-child > div:nth-child(3) > div:last-child {
+    margin-left: 0;
+    font-size: 96px;
+    margin-top: -32px;
+}
+
+#search-bar-min a {
+    text-decoration: none;
+}
+
+#search-bar-min a:visited {
+    color: #ffffff;
+}
+/* --------------------------------------------------------------------------- CSS for id: search-bar-min, end --------------------------------------------------------------------------- */
 
 
 
@@ -285,10 +395,11 @@ a {
     font-size: 24px;
     opacity: 80%;
 }
+/* --------------------------------------------------------------------------- CSS for class: container1, end --------------------------------------------------------------------------- */
+
+
 
 /* --------------------------------------------------------------------------- CSS for search results, start --------------------------------------------------------------------------- */
-
-/* Container around the advanced search inputs and results */
 .container:not(.center) div.advanced_search {
     background-color: #D9D9D9;
     border-radius: 30px;
@@ -312,14 +423,12 @@ a {
     color: #FFFFFF;
 }
 
-/* Advanced search inputs table */
 .advanced_search .search_table {
     width: 100%;
     margin: auto;
     border-spacing: 20px;
 }
 
-/* 'Type here' inputs */
 .search_input {
     border-radius: 5px;
     background-color: #FFFFFF;
@@ -327,7 +436,6 @@ a {
     color:rgba(0, 0, 0, 0.5);
 }
 
-/* Results header */
 .advanced_search_results {
     background-color: #1B263B;
     color: #FFFFFF;
@@ -335,7 +443,6 @@ a {
     width: 100%;
 }
 
-/* Ensure items in the header are equally spaced */
 .advanced_search_results > tbody > tr > th {
     width: 14%;
 }
@@ -348,7 +455,7 @@ a {
     margin-top: 20px;
 }
 
-.advanced_search_results_body td {
+.advanced_search_results_body td{
     background-color: #a9b4c2;
     border-radius: 20px;
     width: 14%;
@@ -358,7 +465,7 @@ a {
 .advanced_search_results_body .language_tag {
     background-color: #1B263B;
     color: #FFFFFF;
-    padding: 6px;
+    height: 34px;
 }
 
 .advanced_search p {
@@ -372,7 +479,49 @@ a {
     color: #FFFFFF;
 }
 
+.row-flex {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 
+#advanced_search_button {
+    border-radius: 50px;
+    height: 60px;
+    width: 12%;
+    background-color: #1B263B;
+    opacity: 95%;
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+}
+
+#advanced_search_button > div {
+    width: fit-content;
+    margin: auto;
+    color: #ffffff;
+    font-size: 18px;
+    margin-right: 0;
+}
+
+#advanced_search_button > div:last-child {
+    margin-left: 0;
+    margin-right: auto;
+    font-size: 70px;
+    margin-top: -21px;
+}
+
+#advanced_search_button a {
+    text-decoration: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+#advanced_search_button a:visited {
+    color: #ffffff;
+}
 /* --------------------------------------------------------------------------- CSS for search results, end --------------------------------------------------------------------------- */
 
 
@@ -604,7 +753,7 @@ a {
 
 
 
-/* --------------------------------------------------------------------------- CSS for id: info, start --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- CSS for id: info title back iso, start --------------------------------------------------------------------------- */
 /* Includes all divs inside the 'info' div */
 #info {
     display: flex;
@@ -614,25 +763,11 @@ a {
 #title {
     width: 15%;
     height: fit-content;
-    margin-left: 25%;
-    margin-right: auto;
+    margin-left: 50%;
     margin-bottom: 10px;
     background-color: #415A77;
     color: white;
     border-radius: 10px;
-    text-align: center;
-    font-weight: bold;
-}
-
-#back {
-    width: 15%;
-    height: fit-content;
-    padding: 4px;
-    margin-left: 2%;
-    margin-right: auto;
-    margin-bottom: 10px;
-    background-color: #1B263B;
-    border-radius: 20px;
     text-align: center;
     font-weight: bold;
 }
@@ -649,7 +784,7 @@ a {
     border-radius: 10px;
     text-align: center;
 }
-/* --------------------------------------------------------------------------- CSS for class: title, end --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- CSS for class: info title back iso, end --------------------------------------------------------------------------- */
 
 /* This style is a modyfied version of the one from this site: 
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top */
