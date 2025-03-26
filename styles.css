@@ -713,11 +713,14 @@ a:visited {
 
 
 /* --------------------------------------------------------------------------- CSS for class: container4, start --------------------------------------------------------------------------- */
+/* makes info appear next to one another */
 .container4{
     display: flex;
     flex-direction: row;
     height: 1600px;
 }
+
+/* creates small side-container */
 .container4_1 {
     width: 15%;
     margin-left: auto;
@@ -736,6 +739,40 @@ a:visited {
     padding: 10px;
 }
 
+/* info appears next to one another */
+#info {
+    display: flex;
+    flex-direction: row;
+}
+
+/* main title of page */
+#title {
+    width: 15%;
+    height: fit-content;
+    margin-left: 50%;
+    margin-bottom: 10px;
+    background-color: #415A77;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* iso code of language */
+#iso {
+    width: 15%;
+    height: fit-content;
+    padding: 4px;
+    margin-left: auto;
+    margin-right: 2%;
+    margin-bottom: 10px;
+    background-color: #415A77;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* main container on page */
 .container4_2 {
     width: 77%;
     margin-left: auto;
@@ -753,6 +790,7 @@ a:visited {
     border-radius: 10px; 
 }
 
+/* nice headpiece per paragraph */
 .headpiece {
     width: fit-content;
     margin: 20px 0px 20px 40px;
@@ -763,6 +801,7 @@ a:visited {
     font-weight: bold;
 }
 
+/* main information */
 .texts {
     margin: 0px 0px 60px 40px;
     background-color: #1B263B;
@@ -774,42 +813,6 @@ a:visited {
     padding: 10px;
 }
 /* --------------------------------------------------------------------------- CSS for class: container4, end --------------------------------------------------------------------------- */
-
-
-
-/* --------------------------------------------------------------------------- CSS for id: info title back iso, start --------------------------------------------------------------------------- */
-/* Includes all divs inside the 'info' div */
-#info {
-    display: flex;
-    flex-direction: row;
-}
-
-#title {
-    width: 15%;
-    height: fit-content;
-    margin-left: 50%;
-    margin-bottom: 10px;
-    background-color: #415A77;
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: bold;
-}
-
-#iso {
-    width: 15%;
-    height: fit-content;
-    padding: 4px;
-    margin-left: auto;
-    margin-right: 2%;
-    margin-bottom: 10px;
-    background-color: #415A77;
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-}
-/* --------------------------------------------------------------------------- CSS for class: info title back iso, end --------------------------------------------------------------------------- */
-
 /* This style is a modyfied version of the one from this site: 
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top */
 #myBtn {
