@@ -541,20 +541,42 @@ a:visited {
 
 
 /* --------------------------------------------------------------------------- CSS for class: container4, start --------------------------------------------------------------------------- */
-.container4 {
-    width: 93.75%;
-    margin-left: auto;
-    margin-right: auto;
+.container4{
+    display: flex;
+    flex-direction: row;
     height: 1600px;
 }
+.container4_1 {
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.container4 > div {
+.container4_1 > div {
     position: absolute;
     width: inherit;
     height: inherit;
 }
 
-.container4 > div:first-child {
+.container4_1 > div:first-child {
+    background-color: #D9D9D9;
+    border-radius: 10px; 
+    padding: 10px;
+}
+
+.container4_2 {
+    width: 77%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container4_2 > div {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.container4_2 > div:first-child {
     background-color: #D9D9D9;
     border-radius: 10px; 
 }
@@ -583,12 +605,17 @@ a:visited {
 
 
 
-/* --------------------------------------------------------------------------- CSS for class: title, start --------------------------------------------------------------------------- */
-/* Used in combination with container4 as a title above the container */
+/* --------------------------------------------------------------------------- CSS for id: info, start --------------------------------------------------------------------------- */
+/* Includes all divs inside the 'info' div */
+#info {
+    display: flex;
+    flex-direction: row;
+}
+
 #title {
     width: 15%;
-    height: 50px;
-    margin-left: auto;
+    height: fit-content;
+    margin-left: 25%;
     margin-right: auto;
     margin-bottom: 10px;
     background-color: #415A77;
@@ -600,8 +627,9 @@ a:visited {
 
 #back {
     width: 15%;
+    height: fit-content;
     padding: 4px;
-    margin-left: 50px;
+    margin-left: 2%;
     margin-right: auto;
     margin-bottom: 10px;
     background-color: #1B263B;
@@ -612,9 +640,10 @@ a:visited {
 
 #iso {
     width: 15%;
+    height: fit-content;
     padding: 4px;
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 2%;
     margin-bottom: 10px;
     background-color: #415A77;
     color: white;
